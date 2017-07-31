@@ -68,6 +68,8 @@ public class BigDataViewerN5Demo {
 		System.out.println(Arrays.toString(Intervals.dimensionsAsLongArray(down3)));
 		RandomAccessibleIntervalMipmapSource<VolatileLabelMultisetType> mipmapsource = new RandomAccessibleIntervalMipmapSource<>(rais, new VolatileLabelMultisetType(),
 				new double[][] { {1,1,4}, {4,4,4}, {16,16,16}, {32,32,32} }, null, "rai multiscale");
+//		RandomAccessibleIntervalMipmapSource<VolatileLabelMultisetType> mipmapsource = new RandomAccessibleIntervalMipmapSource<>(rais, new VolatileLabelMultisetType(),
+//				new double[][] { {1,1,4} }, null, "rai singlescale");
 //				new double[][] { {1,1,1}, {2,2,2}, {4,4,4} }, null, "rai multiscale");
 		
 		ViewerFrame vf = new ViewerFrame(new ArrayList<>(), 1, new CacheControl.Dummy());
